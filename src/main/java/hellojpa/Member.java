@@ -1,21 +1,32 @@
 package hellojpa;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
-public class Member extends BaseEntity{
-    @Id @GeneratedValue
-    @Column(name = "MEMBER_ID")
-    private Long id;
-    private String username;
-    private String city;
-    private String street;
-    private String zipcode;
+public class Member {
+@Id @GeneratedValue
+private Long id;
+private String username;
+private int age;
+@ManyToOne(fetch = FetchType.LAZY)
+@JoinColumn(name = "TEAM_ID")
+private Team team;
+@Enumerated(EnumType.STRING)
+private MemberType type;
+    public Member(Long id, String username, int age, Team team) {
+        this.id = id;
+        this.username = username;
+        this.age = age;
+        this.team = team;
+    }
 
-    @OneToMany(mappedBy = "member")
-    private List<Order> orders=new ArrayList<>();
+    public Member() {
+    }
+
+    public Member(String username, int age) {
+        this.username = username;
+        this.age = age;
+    }
 
     public Long getId() {
         return id;
@@ -33,35 +44,23 @@ public class Member extends BaseEntity{
         this.username = username;
     }
 
-    public String getCity() {
-        return city;
+    public int getAge() {
+        return age;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public String getStreet() {
-        return street;
+    public void changeTeam(Team team)
+    {
+        this.team=team;
+        this.team.addMember(this);
     }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public String getZipcode() {
-        return zipcode;
-    }
-
-    public void setZipcode(String zipcode) {
-        this.zipcode = zipcode;
-    }
-
-    public List<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<Order> orders) {
-        this.orders = orders;
+    public void setTeam(Team team) {
+        this.team=team;
+        if (team.getMembers().contains(this)) return;
+        else
+          this.team.addMember(this);
     }
 }

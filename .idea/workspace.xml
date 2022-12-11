@@ -5,39 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ab805f9-e580-437f-8e2d-f9161eed3fa6" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Album.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Delivery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/DeliveryStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Movie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/OrderItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/OrderStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Team.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
-      </map>
-    </option>
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="iodhhqwk" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2HoUdi0SJcQNZqppaFcdp00bCzi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -47,27 +69,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/insoochoi/Documents/book/jpa/jpashop_test/src/main/java/hellojpa",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDK",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.32566696",
-    "settings.editor.selected.configurable": "gradle.compiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/insoo/IdeaProjects/scala4e&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.32566696&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="hellojpa" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/hellojpa" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="hellojpa" />
     </key>
   </component>
   <component name="RunManager">
@@ -99,6 +128,32 @@
       <option name="presentableId" value="Default" />
       <updated>1668951018852</updated>
       <workItem from="1668951019967" duration="5260000" />
+      <workItem from="1670164105004" duration="1543000" />
+      <workItem from="1670250181440" duration="156000" />
+      <workItem from="1670250353797" duration="65000" />
+      <workItem from="1670250428490" duration="30000" />
+      <workItem from="1670253353835" duration="92000" />
+      <workItem from="1670253458116" duration="107000" />
+      <workItem from="1670253586840" duration="41000" />
+      <workItem from="1670585182065" duration="6821000" />
+      <workItem from="1670595155549" duration="418000" />
+      <workItem from="1670643816523" duration="4122000" />
+      <workItem from="1670650125186" duration="10000" />
+      <workItem from="1670651775542" duration="1215000" />
+      <workItem from="1670661309155" duration="3155000" />
+      <workItem from="1670665052606" duration="172000" />
+      <workItem from="1670665233893" duration="7492000" />
+      <workItem from="1670677613825" duration="2543000" />
+      <workItem from="1670680503639" duration="27000" />
+      <workItem from="1670680961963" duration="9000" />
+      <workItem from="1670681528109" duration="3000" />
+      <workItem from="1670681545987" duration="7000" />
+      <workItem from="1670681574963" duration="9000" />
+      <workItem from="1670720299074" duration="9244000" />
+      <workItem from="1670736229330" duration="1300000" />
+      <workItem from="1670737845556" duration="4000" />
+      <workItem from="1670754295193" duration="609000" />
+      <workItem from="1670801661847" duration="7000" />
     </task>
     <servers />
   </component>
@@ -115,5 +170,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

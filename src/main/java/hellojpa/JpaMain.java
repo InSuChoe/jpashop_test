@@ -1,35 +1,47 @@
 package hellojpa;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import javax.persistence.*;
+import java.util.List;
+import java.util.Objects;
 
 public class JpaMain {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    EntityManagerFactory factory = Persistence.createEntityManagerFactory("hellojpa");
+    EntityManager entityManager = factory.createEntityManager();
+    EntityTransaction transaction = entityManager.getTransaction();
+    transaction.begin();
 
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("hellojpa");
-        EntityManager manager = factory.createEntityManager();
-        EntityTransaction transaction = manager.getTransaction();
+    try {
 
-        transaction.begin();
+      Team team = new Team();
+      team.setName("teamA");
+      entityManager.persist(team);
 
-        try
-        {
-            Book book= new Book();
-            book.setName("ORM_JPA 표준");
-            book.setAuthor("김영한");
+      Member member = new Member();
+      member.setUsername("member1");
+      member.setAge(10);
+      member.setTeam(team);
+      entityManager.persist(member);
 
-            manager.persist(book);
-
-            transaction.commit();
-        } catch (Exception e) {
-            transaction.rollback();
-        }finally {
-            manager.close();
-            factory.close();
-        }
+      entityManager.flush();
+      entityManager.clear();
 
 
+      String query="select m.username, 'HELLO', true " +
+                      " from Member m " +
+                      " where m.type =hellojpa.MemberType.ADMIN "
+                              ;
+      List<Object[]> result = entityManager.createQuery(query).getResultList();
+
+      for (Object[] objects : result) {
+        System.out.println("objects[0] = " + objects[0]);
+        System.out.println("objects[1] = " + objects[1]);
+        System.out.println("objects[2] = " + objects[2]);
+      }
+      transaction.commit();
+
+    } catch (Exception e) {
+      transaction.rollback();
     }
+  }
 }

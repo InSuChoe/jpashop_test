@@ -1,0 +1,23 @@
+
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+V
+&src/main/java/hellojpa/BaseEntity.java,4/1/41dcd6411ea17d5fdb1caaec18e1b93eafa53cdb
+Q
+!src/main/java/hellojpa/Album.java,d/5/d51633f288f6c9e54960bf8cc2765c46f749ce95
+P
+ src/main/java/hellojpa/Book.java,4/0/40e311ccbf52f9df9ec4629134747136c70691af
+T
+$src/main/java/hellojpa/Delivery.java,e/6/e60dde03ff86b25571f014da0e723a6f243bf1d0
+Z
+*src/main/java/hellojpa/DeliveryStatus.java,e/c/ec457bc1e915e403f47e40b20d96e655bc98b366
+P
+ src/main/java/hellojpa/Item.java,9/7/978a85b417eb31c6aef1282acb782910acfded2c
+R
+"src/main/java/hellojpa/Period.java,a/0/a0b3136a164e8bbec40efc2281f122de4175ab86
+S
+#src/main/java/hellojpa/Address.java,e/d/ed0ba483127da0c1ee616e1633db429d81762845
+S
+#src/main/java/hellojpa/JpaMain.java,3/8/3818751ba7a7e2bbfde51b6c3126a02f97f5a644
+R
+"src/main/java/hellojpa/Member.java,f/d/fd68fd8c0388b07c61445afa503c8ec018eab4c0
