@@ -3,6 +3,10 @@ package hellojpa;
 import javax.persistence.*;
 
 @Entity
+@NamedQuery(
+        name = "Member.findByUsername"
+        ,query = "select m from Member m where m.username = :username"
+)
 public class Member {
 @Id @GeneratedValue
 private Long id;
@@ -59,8 +63,24 @@ private MemberType type;
     }
     public void setTeam(Team team) {
         this.team=team;
-        if (team.getMembers().contains(this)) return;
-        else
-          this.team.addMember(this);
+        if (!this.team.getMembers().contains(this)) 
+
+
+  this.team.addMember(this);
+    }
+
+    public Team getTeam() {
+        return this.team;
+    }
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", age=" + age +
+                ", team=" + team +
+                ", type=" + type +
+                '}';
     }
 }
